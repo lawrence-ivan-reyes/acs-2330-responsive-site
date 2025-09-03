@@ -30,6 +30,7 @@
         <a class="nav-item nav-link active" href="about.html">About Us</a>
         <a class="nav-item nav-link" href="join.html">Join the Nest</a>
     </div>
+    <button class="mobile-nav-toggle d-none" onclick="toggleMobileNav()">☰</button>
     <div class="ms-auto d-flex align-items-center"> 
         <form class="d-flex me-3" role="search">
             <input class="form-control me-2 custom-search" type="search" placeholder="Search" aria-label="Search">
@@ -207,6 +208,13 @@
 
         observer.observe(ourStorySection);
     });
+</script>
+
+<script>
+    function toggleMobileNav() {
+        const navbar = document.querySelector('.custom-navbar');
+        navbar.classList.toggle('mobile-nav-open');
+    }
 </script>
 
 </body>
