@@ -474,24 +474,7 @@ footer {
     margin-bottom: 30px; 
 }
 
-.small-image {
-    max-width: 55%;
-    height: auto; 
-    display: block; 
-    margin-left: auto; 
-    margin-right: auto; 
-    position: absolute; 
-    top: 90%;
-    left: 25.5%; 
-    transform: translate(-50%, -50%) scale(0.95); 
-    opacity: 0;
-    transition: var(--fade-transition);
-}
 
-.small-image.visible {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1); 
-}
 
 .mission-section {
     margin-top: 0; 
@@ -924,14 +907,29 @@ footer {
     
     /* hero */
     .hero-background-img {
-        height: 70vh;
+        height: 60vh;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .hero-background-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
     }
     
     .hero-content {
-        top: 35%;
-        padding: 15px;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px 15px;
         text-align: center;
-        width: 100%;
+        width: 90%;
+        z-index: 2;
     }
     
     .hero-content h1 {
@@ -946,12 +944,7 @@ footer {
         line-height: 1.4;
     }
     
-    .small-image {
-        max-width: 80%;
-        top: 95%;
-        left: 50%;
-        transform: translate(-50%, -50%) scale(0.8);
-    }
+
     
     /* container/spacing */
     .container {
@@ -985,7 +978,8 @@ footer {
     /* cards/layout */
     .monthly-spotlight {
         width: 95%;
-        padding-top: 60px;
+        padding-top: 20px;
+        margin-top: 20px;
     }
     
     .monthly-card {
