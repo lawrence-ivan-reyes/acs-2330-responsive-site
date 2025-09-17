@@ -21,6 +21,10 @@
 </head>
 <body class="bg-dark text-light">
     
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<a href="#monthly-spotlight" class="skip-link">Skip to monthly spotlight</a>
+<a href="#genres" class="skip-link">Skip to genres</a>
+
 <nav class="navbar navbar-expand navbar-dark sticky-top custom-navbar"> 
     <a class="navbar-brand" href="index.html">
         <img src="images/booknest-logo.png" alt="BookNest Logo" width="80" height="64">
@@ -30,7 +34,7 @@
         <a class="nav-item nav-link" href="about.html">About Us</a>
         <a class="nav-item nav-link" href="join.html">Join the Nest</a>
     </div>
-    <button class="mobile-nav-toggle d-none" onclick="toggleMobileNav()">☰</button>
+    <button class="mobile-nav-toggle d-none" onclick="toggleMobileNav()" aria-label="Toggle mobile navigation menu" aria-expanded="false" aria-controls="navbar-nav">☰</button>
     <div class="ms-auto d-flex align-items-center"> 
         <form class="d-flex me-3" role="search">
             <input class="form-control me-2 custom-search" type="search" placeholder="Search" aria-label="Search">
@@ -40,6 +44,7 @@
     </div>
 </nav>
     
+<main id="main-content">
 <div class="hero-background-img hero-effect">
     <img src="images/hero-image.png" alt="Hero image: A stack of old, worn books arranged in a rising staircase formation against a black background, with the top book open showing aged yellowish pages fanned out" class="img-fluid">
     <div class="hero-content text-left" >
@@ -51,7 +56,7 @@
 
 
 
-<section class="monthly-spotlight">
+<section id="monthly-spotlight" class="monthly-spotlight">
     <div class="container mt-5">
         <h2 class="text-white" style="font-size: 3.5rem; padding-top: 20px;">Monthly Spotlight</h2>
         <div class="row"> 
@@ -101,12 +106,12 @@
     </div>
 </div>
 
-<section class="genres-top-picks">
+<section id="genres" class="genres-top-picks">
     <div class="container mt-5">
         <h2 class="text-center text-white" style="font-size: 3.5rem;">Top Genres & Picks of the Month</h2>
         <div class="d-flex justify-content-between mt-4">
 
-        <div class="genre-card">
+        <div class="genre-card" role="region" aria-label="Fiction genre recommendations">
             <div class="card text-white bg-secondary mb-3">
                 <div class="card-header">Fiction</div>
                 <div id="fictionCarousel" class="carousel slide" data-bs-ride="false">
@@ -313,6 +318,7 @@
     </div>
     </div>
 </section>
+</main>
 
 <footer class="footer">
     <div class="container text-center">
