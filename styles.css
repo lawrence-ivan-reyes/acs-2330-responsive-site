@@ -768,13 +768,19 @@ footer {
 }
 
 .events-section {
-    background: 
-        var(--main-gradient), 
-        url('images/join-the-nest-image.jpg');
-    background-size: cover; 
-    background-position: center;
-    background-repeat: no-repeat;
+    background: var(--main-gradient);
     margin-bottom: 80px;
+    position: relative;
+}
+
+.events-background-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
 }
 
 .events-section h2 {
