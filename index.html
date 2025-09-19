@@ -25,54 +25,62 @@
 <a href="#monthly-spotlight" class="skip-link">Skip to monthly spotlight</a>
 <a href="#genres" class="skip-link">Skip to genres</a>
 
-<nav class="navbar navbar-expand navbar-dark sticky-top custom-navbar"> 
-    <a class="navbar-brand" href="index.html">
-        <img src="images/booknest-logo.png" alt="BookNest Logo" width="80" height="64">
+<header>
+<nav class="navbar navbar-expand navbar-dark sticky-top custom-navbar" role="navigation" aria-label="Main navigation"> 
+    <a class="navbar-brand" href="index.html" aria-label="BookNest Home">
+        <img src="images/booknest-logo.png" alt="BookNest - Online Book Club Logo" width="80" height="64">
     </a>
-    <div class="navbar-nav">
-        <a class="nav-item nav-link active" href="index.html">Home</a>
+    <div class="navbar-nav" id="navbar-nav">
+        <a class="nav-item nav-link active" href="index.html" aria-current="page">Home</a>
         <a class="nav-item nav-link" href="about.html">About Us</a>
         <a class="nav-item nav-link" href="join.html">Join the Nest</a>
     </div>
     <button class="mobile-nav-toggle d-none" onclick="toggleMobileNav()" aria-label="Toggle mobile navigation menu" aria-expanded="false" aria-controls="navbar-nav">☰</button>
     <div class="ms-auto d-flex align-items-center"> 
-        <form class="d-flex me-3" role="search">
-            <input class="form-control me-2 custom-search" type="search" placeholder="Search" aria-label="Search">
+        <form class="d-flex me-3" role="search" aria-label="Search books and content">
+            <input class="form-control me-2 custom-search" type="search" placeholder="Search books, authors, genres..." aria-label="Search books, authors, and genres">
             <button class="btn btn-outline-light" type="submit">Search</button>
         </form>
-        <a href="#" class="btn btn-outline-light">Login</a>
+        <a href="#" class="btn btn-outline-light" role="button">Login</a>
     </div>
 </nav>
+</header>
     
 <main id="main-content">
-<div class="hero-background-img hero-effect">
-    <img src="images/hero-image.png" alt="Hero image: A stack of old, worn books arranged in a rising staircase formation against a black background, with the top book open showing aged yellowish pages fanned out" class="img-fluid">
-    <div class="hero-content text-left" >
-        <h1 class="hero-title">The Online Book Club that Bridges Borders and Brings Readers Together.</h1>
-        <p class="hero-subtitle">Your Passport to a Global Community of Book Lovers, No Matter Where You Are in the World</p>
-        <a href="join.html" class="btn btn-light hero-cta-btn">Join the Nest</a>
-    </div>
+<section class="hero-section" aria-labelledby="hero-title">
+<figure class="hero-background-img hero-effect">
+    <img src="images/hero-image.png" alt="Stack of weathered vintage books arranged in ascending steps against a dark background, with the topmost book opened to reveal aged, yellowed pages fanned out" class="img-fluid">
+    <figcaption class="visually-hidden">Hero image representing the journey of reading and knowledge</figcaption>
+</figure>
+<div class="hero-content text-left">
+    <h1 id="hero-title" class="hero-title">The Online Book Club that Bridges Borders and Brings Readers Together.</h1>
+    <p class="hero-subtitle">Your Passport to a Global Community of Book Lovers, No Matter Where You Are in the World</p>
+    <a href="join.html" class="btn btn-light hero-cta-btn" role="button" aria-describedby="hero-subtitle">Join the Nest</a>
 </div>
+</section>
 
 
 
-<section id="monthly-spotlight" class="monthly-spotlight">
+<section id="monthly-spotlight" class="monthly-spotlight" aria-labelledby="spotlight-heading">
     <div class="container mt-5">
-        <h2 class="text-white" style="font-size: 3.5rem; padding-top: 20px;">Monthly Spotlight</h2>
-        <div class="row"> 
+        <h2 id="spotlight-heading" class="text-white" style="font-size: 3.5rem; padding-top: 20px;">Monthly Spotlight</h2>
+        <article class="row"> 
         <div class="col-12 col-md-12"> 
-            <div class="monthly-card text-white bg-transparent mb-3">
+            <div class="monthly-card text-white bg-transparent mb-3" role="region" aria-labelledby="featured-book-title">
                 <div class="row no-gutters">
                     <div class="col-md-4">
-                        <img src="images/denison-avenue.jpg" class="card-img" alt="Book cover for Denison Avenue by Christina Wong, featuring artistic illustration of a suburban Toronto street on the cover" style="object-fit: cover; height: 100%; width: 100%;">
+                        <figure>
+                            <img src="images/denison-avenue.jpg" class="card-img" alt="Denison Avenue book cover featuring an artistic ink illustration of a Toronto suburban street with traditional Chinese signage and modern buildings" style="object-fit: cover; height: 100%; width: 100%;">
+                            <figcaption class="visually-hidden">Featured book cover for this month's selection</figcaption>
+                        </figure>
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h3 class="card-title" style="font-size: 2rem;">Denison Avenue</h3>
+                            <h3 id="featured-book-title" class="card-title" style="font-size: 2rem;">Denison Avenue</h3>
                             <h4 class="card-subtitle mb-2 text-muted">Author: Christina Wong</h4>
-                            <p class="card-text">Bringing together ink artwork and fiction, Denison Avenue by Daniel Innes (illustrations) and Christina Wong (text) follows the elderly Wong Cho Sum, who, living in Toronto’s gentrifying Chinatown–Kensington Market, begins to collect bottles and cans after the sudden loss of her husband as a way to fill her days and keep grief and loneliness at bay. In her long walks around the city, Cho Sum meets new friends, confronts classism and racism, and learns how to build a life as a widow in a neighborhood that is being destroyed and rebuilt, leaving elders like her behind.</p>
+                            <p class="card-text">Bringing together ink artwork and fiction, Denison Avenue by Daniel Innes (illustrations) and Christina Wong (text) follows the elderly Wong Cho Sum, who, living in Toronto's gentrifying Chinatown–Kensington Market, begins to collect bottles and cans after the sudden loss of her husband as a way to fill her days and keep grief and loneliness at bay. In her long walks around the city, Cho Sum meets new friends, confronts classism and racism, and learns how to build a life as a widow in a neighborhood that is being destroyed and rebuilt, leaving elders like her behind.</p>
                             <p class="card-text">A poignant meditation on loss, aging, gentrification, and the barriers that Chinese Canadian seniors experience in big cities, Denison Avenue beautifully combines visual art, fiction, and the endangered Toisan dialect to create a book that is truly unforgettable.</p>
-                            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#bookModal">
+                            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#bookModal" aria-describedby="featured-book-title">
                                 More Details
                             </button>
                         </div>
@@ -80,7 +88,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </article>
     </div>
 </section>
 
@@ -88,7 +96,7 @@
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-title fs-5" id="bookModalLabel">Denison Avenue</h1>
+                <h3 class="modal-title fs-5" id="bookModalLabel">Denison Avenue</h3>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -106,31 +114,42 @@
     </div>
 </div>
 
-<section id="genres" class="genres-top-picks">
+<section id="genres" class="genres-top-picks" aria-labelledby="genres-heading">
     <div class="container mt-5">
-        <h2 class="text-center text-white" style="font-size: 3.5rem;">Top Genres & Picks of the Month</h2>
-        <div class="d-flex justify-content-between mt-4">
+        <h2 id="genres-heading" class="text-center text-white" style="font-size: 3.5rem;">Top Genres & Picks of the Month</h2>
+        <div class="d-flex justify-content-between mt-4" role="region" aria-label="Genre recommendations">
 
-        <div class="genre-card" role="region" aria-label="Fiction genre recommendations">
+        <article class="genre-card" role="region" aria-labelledby="fiction-heading">
             <div class="card text-white bg-secondary mb-3">
-                <div class="card-header">Fiction</div>
-                <div id="fictionCarousel" class="carousel slide" data-bs-ride="false">
-                    <div class="carousel-inner">
+                <header class="card-header">
+                    <h3 id="fiction-heading">Fiction</h3>
+                </header>
+                <div id="fictionCarousel" class="carousel slide" data-bs-ride="false" aria-label="Fiction book recommendations carousel">
+                    <div class="carousel-inner" role="group" aria-live="polite">
                         <div class="carousel-item active">
-                            <img src="images/fiction-1.jpg" class="d-block w-100" alt="Book cover for The Great Alone by Kristin Hannah">
+                            <figure>
+                                <img src="images/fiction-1.jpg" class="d-block w-100" alt="The Great Alone by Kristin Hannah - Book cover showing a wilderness landscape with mountains and forest">
+                                <figcaption class="visually-hidden">Fiction recommendation: The Great Alone by Kristin Hannah</figcaption>
+                            </figure>
                         </div>
                         <div class="carousel-item">
-                            <img src="images/fiction-2.jpg" class="d-block w-100" alt="Book cover for Darius the Great is Not Okay by Adib Khorram">
+                            <figure>
+                                <img src="images/fiction-2.jpg" class="d-block w-100" alt="Darius the Great is Not Okay by Adib Khorram - Young adult fiction book cover with stylized portrait design">
+                                <figcaption class="visually-hidden">Fiction recommendation: Darius the Great is Not Okay by Adib Khorram</figcaption>
+                            </figure>
                         </div>
                         <div class="carousel-item">
-                            <img src="images/fiction-3.jpg" class="d-block w-100" alt="Book cover for Bliss Montage Stories by Ling Ma">
+                            <figure>
+                                <img src="images/fiction-3.jpg" class="d-block w-100" alt="Bliss Montage Stories by Ling Ma - Contemporary fiction collection cover with abstract design">
+                                <figcaption class="visually-hidden">Fiction recommendation: Bliss Montage Stories by Ling Ma</figcaption>
+                            </figure>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#fictionCarousel" data-bs-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#fictionCarousel" data-bs-slide="prev" aria-label="Previous fiction book">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#fictionCarousel" data-bs-slide="next">
+                    <button class="carousel-control-next" type="button" data-bs-target="#fictionCarousel" data-bs-slide="next" aria-label="Next fiction book">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
@@ -139,116 +158,144 @@
                     <p class="card-text">Need an escape? Dive into stories where reality takes a backseat and your imagination takes the wheel.</p>
                 </div>
             </div>
-        </div>
+        </article>
 
-        <div class="genre-card">
+        <article class="genre-card" role="region" aria-labelledby="thriller-heading">
             <div class="card text-white bg-secondary mb-3">
-                <div class="card-header">Thriller</div>
-                <div id="thrillerCarousel" class="carousel slide" data-bs-ride="false">
-                    <div class="carousel-inner">
+                <header class="card-header">
+                    <h3 id="thriller-heading">Thriller</h3>
+                </header>
+                <div id="thrillerCarousel" class="carousel slide" data-bs-ride="false" aria-label="Thriller book recommendations carousel">
+                    <div class="carousel-inner" role="group" aria-live="polite">
                         <div class="carousel-item active">
-                            <img src="images/thriller-1.jpg" class="d-block w-100" alt="Book cover for Razorblade Tears by S.A. Cosby">
+                            <figure>
+                                <img src="images/thriller-1.jpg" class="d-block w-100" alt="Razorblade Tears by S.A. Cosby - Crime thriller book cover with dark, gritty design">
+                                <figcaption class="visually-hidden">Thriller recommendation: Razorblade Tears by S.A. Cosby</figcaption>
+                            </figure>
                         </div>
                         <div class="carousel-item">
-                            <img src="images/thriller-2.jpg" class="d-block w-100" alt="Book cover for The Overnight Guest by Heather Gudenkauf">
+                            <figure>
+                                <img src="images/thriller-2.jpg" class="d-block w-100" alt="The Overnight Guest by Heather Gudenkauf - Psychological thriller cover with atmospheric design">
+                                <figcaption class="visually-hidden">Thriller recommendation: The Overnight Guest by Heather Gudenkauf</figcaption>
+                            </figure>
                         </div>
                         <div class="carousel-item">
-                            <img src="images/thriller-3.jpg" class="d-block w-100" alt="Book cover for Allegedly by Tiffany D. Jackson">
+                            <figure>
+                                <img src="images/thriller-3.jpg" class="d-block w-100" alt="Allegedly by Tiffany D. Jackson - Young adult thriller with bold, dramatic cover design">
+                                <figcaption class="visually-hidden">Thriller recommendation: Allegedly by Tiffany D. Jackson</figcaption>
+                            </figure>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#thrillerCarousel" data-bs-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#thrillerCarousel" data-bs-slide="prev" aria-label="Previous thriller book">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#thrillerCarousel" data-bs-slide="next">
+                    <button class="carousel-control-next" type="button" data-bs-target="#thrillerCarousel" data-bs-slide="next" aria-label="Next thriller book">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
                 <div class="card-body">
-                    <p class="card-text">Grab a seat, keep your lights on, and get ready to question everything—these books don’t play fair.</p>
+                    <p class="card-text">Grab a seat, keep your lights on, and get ready to question everything—these books don't play fair.</p>
                 </div>
             </div>
-        </div>
+        </article>
 
-        <div class="genre-card">
+        <article class="genre-card" role="region" aria-labelledby="scifi-heading">
             <div class="card text-white bg-secondary mb-3">
-                <div class="card-header">Sci-Fi</div>
-                <div id="sciFiCarousel" class="carousel slide" data-bs-ride="false">
-                    <div class="carousel-inner">
+                <header class="card-header">
+                    <h3 id="scifi-heading">Sci-Fi</h3>
+                </header>
+                <div id="sciFiCarousel" class="carousel slide" data-bs-ride="false" aria-label="Science fiction book recommendations carousel">
+                    <div class="carousel-inner" role="group" aria-live="polite">
                         <div class="carousel-item">
-                            <img src="images/scifi-1.jpg" class="d-block w-100" alt="Book cover for The Martian by Andy Weir">
+                            <figure>
+                                <img src="images/scifi-1.jpg" class="d-block w-100" alt="The Martian by Andy Weir - Science fiction novel cover featuring Mars and space themes">
+                                <figcaption class="visually-hidden">Sci-Fi recommendation: The Martian by Andy Weir</figcaption>
+                            </figure>
                         </div>
                         <div class="carousel-item">
-                            <img src="images/scifi-2.jpg" class="d-block w-100" alt="Book cover for The Passengers by John Marrs">
+                            <figure>
+                                <img src="images/scifi-2.jpg" class="d-block w-100" alt="The Passengers by John Marrs - Futuristic thriller cover with technological elements">
+                                <figcaption class="visually-hidden">Sci-Fi recommendation: The Passengers by John Marrs</figcaption>
+                            </figure>
                         </div>
                         <div class="carousel-item active">
-                            <img src="images/scifi-3.jpg" class="d-block w-100" alt="Book cover for The Ancients by John Larison">
+                            <figure>
+                                <img src="images/scifi-3.jpg" class="d-block w-100" alt="The Ancients by John Larison - Science fiction cover with mysterious, otherworldly design">
+                                <figcaption class="visually-hidden">Sci-Fi recommendation: The Ancients by John Larison</figcaption>
+                            </figure>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#sciFiCarousel" data-bs-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#sciFiCarousel" data-bs-slide="prev" aria-label="Previous sci-fi book">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#sciFiCarousel" data-bs-slide="next">
+                    <button class="carousel-control-next" type="button" data-bs-target="#sciFiCarousel" data-bs-slide="next" aria-label="Next sci-fi book">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
                 <div class="card-body">
-                    <p class="card-text">Buckle up for mind-bending adventures, strange new worlds, and tech that’s just waiting to take over.</p>
+                    <p class="card-text">Buckle up for mind-bending adventures, strange new worlds, and tech that's just waiting to take over.</p>
                 </div>
             </div>
+        </article>
+    </div>
+    </div>
+</section>
+
+<section class="testimonials-section" aria-labelledby="testimonials-heading">
+    <div class="container mt-5">
+        <h2 id="testimonials-heading" class="text-left text-white">Testimonials & Member Reviews</h2>
+        <div class="row mt-4" role="region" aria-label="Member testimonials">
+        <div class="col-md-4">
+            <article class="card testimonial-card text-white mb-3" role="region" aria-labelledby="testimonial-1">
+                <div class="card-body">
+                    <p class="quote" aria-hidden="true">"</p>
+                    <blockquote id="testimonial-1">
+                        <p class="card-text">"BookNest has transformed my reading experience!"</p>
+                        <cite class="card-text" data-bs-toggle="tooltip" title="Harry's Favourite Genre: Sci-Fi">- Harry Potter | London, UK</cite>
+                    </blockquote>
+                </div>
+            </article>
+        </div>
+        <div class="col-md-4">
+            <article class="card testimonial-card text-white mb-3" role="region" aria-labelledby="testimonial-2">
+                <div class="card-body">
+                    <p class="quote" aria-hidden="true">"</p>
+                    <blockquote id="testimonial-2">
+                        <p class="card-text">"I've met so many amazing people through BookNest!"</p>
+                        <cite class="card-text" data-bs-toggle="tooltip" title="Jae's Favourite Genre: Fiction">- Jae Son | San Diego, USA</cite>
+                    </blockquote>
+                </div>
+            </article>
+        </div>
+        <div class="col-md-4">
+            <article class="card testimonial-card text-white mb-3" role="region" aria-labelledby="testimonial-3">
+                <div class="card-body">
+                    <p class="quote" aria-hidden="true">"</p>
+                    <blockquote id="testimonial-3">
+                        <p class="card-text">"The discussions we have at BookNest are so fun!"</p>
+                        <cite class="card-text" data-bs-toggle="tooltip" title="Ivan's Favourite Genre: Thriller">- Ivan Reyes | Toronto, CA</cite>
+                    </blockquote>
+                </div>
+            </article>
         </div>
     </div>
     </div>
 </section>
 
-<section class="testimonials-section">
+<section class="faq-section" aria-labelledby="faq-heading">
     <div class="container mt-5">
-        <h2 class="text-left text-white">Testimonials & Member Reviews</h2>
-        <div class="row mt-4">
-        <div class="col-md-4">
-            <div class="card testimonial-card text-white mb-3">
-                <div class="card-body">
-                    <p class="quote">“</p>
-                    <p class="card-text">"BookNest has transformed my reading experience!"</p>
-                    <p class="card-text" data-bs-toggle="tooltip" title="Harry's Favourite Genre: Sci-Fi">- Harry Potter | London, UK</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card testimonial-card text-white mb-3">
-                <div class="card-body">
-                    <p class="quote">“</p>
-                    <p class="card-text">"I've met so many amazing people through BookNest!"</p>
-                    <p class="card-text" data-bs-toggle="tooltip" title="Jae's Favourite Genre: Fiction">- Jae Son | San Diego, USA</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card testimonial-card text-white mb-3">
-                <div class="card-body">
-                    <p class="quote">“</p>
-                    <p class="card-text">"The discussions we have at BookNest are so fun!"</p>
-                    <p class="card-text" data-bs-toggle="tooltip" title="Ivan's Favourite Genre: Thriller">- Ivan Reyes | Toronto, CA</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-</section>
-
-<section class="faq-section">
-    <div class="container mt-5">
-        <h2 class="text-left text-white">Frequently Asked Questions</h2>
-        <div class="accordion" id="accordionFAQ">
+        <h2 id="faq-heading" class="text-left text-white">Frequently Asked Questions</h2>
+        <div class="accordion" id="accordionFAQ" role="region" aria-labelledby="faq-heading">
         <div class="accordion-item">
-            <h2 class="accordion-header">
+            <h3 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="true" aria-controls="faqOne">
                     What is BookNest?
                 </button>
-            </h2>
+            </h3>
             <div id="faqOne" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
                 <div class="accordion-body">
                     BookNest is an online community that connects readers from around the world, providing a platform to share book recommendations, participate in discussions, and attend virtual events.
@@ -256,11 +303,11 @@
             </div>
         </div>
         <div class="accordion-item">
-            <h2 class="accordion-header">
+            <h3 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">
                     How can I join BookNest?
                 </button>
-            </h2>
+            </h3>
             <div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
                 <div class="accordion-body">
                     Joining BookNest is easy! Simply create an account on our website, and you’ll be able to participate in discussions, events, and more.
@@ -268,11 +315,11 @@
             </div>
         </div>
         <div class="accordion-item">
-            <h2 class="accordion-header">
+            <h3 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">
                     What types of books do you read?
                 </button>
-            </h2>
+            </h3>
             <div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
                 <div class="accordion-body">
                     We explore a variety of genres, including fiction, non-fiction, science fiction, fantasy, and more. Members can suggest books for our monthly selections.
@@ -280,11 +327,11 @@
             </div>
         </div>
         <div class="accordion-item">
-            <h2 class="accordion-header">
+            <h3 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFour" aria-expanded="false" aria-controls="faqFour">
                     Are there any membership fees?
                 </button>
-            </h2>
+            </h3>
             <div id="faqFour" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
                 <div class="accordion-body">
                     No, BookNest is completely free to join! We believe in fostering a community of readers without any financial barriers.
@@ -292,11 +339,11 @@
             </div>
         </div>
         <div class="accordion-item">
-            <h2 class="accordion-header">
+            <h3 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFive" aria-expanded="false" aria-controls="faqFive">
                     How can I suggest a book for the book club?
                 </button>
-            </h2>
+            </h3>
             <div id="faqFive" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
                 <div class="accordion-body">
                     Members can suggest books by submitting their recommendations through our website. We review all suggestions for upcoming discussions.
@@ -304,11 +351,11 @@
             </div>
         </div>
         <div class="accordion-item">
-            <h2 class="accordion-header">
+            <h3 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqSix" aria-expanded="false" aria-controls="faqSix">
                     Can I attend events if I'm not a member?
                 </button>
-            </h2>
+            </h3>
             <div id="faqSix" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
                 <div class="accordion-body">
                     Some events are open to non-members, but many are exclusive to members. We encourage you to join to enjoy all our offerings!
@@ -320,14 +367,14 @@
 </section>
 </main>
 
-<footer class="footer">
+<footer class="footer" role="contentinfo" aria-label="Site footer">
     <div class="container text-center">
-        <div class="footer-links">
+        <nav class="footer-links" aria-label="Footer navigation">
             <a href="about.html" class="footer-link">About Us</a>
             <a href="#" class="footer-link">Contact</a>
             <a href="#" class="footer-link">Privacy Policy</a>
             <a href="#" class="footer-link">Terms of Service</a>
-        </div>
+        </nav>
         <p class="mt-3">&copy; 2025 BookNest. All Rights Reserved.</p>
     </div>
 </footer>

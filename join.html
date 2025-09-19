@@ -28,77 +28,79 @@
 <a href="#join-steps" class="skip-link">Skip to join steps</a>
 <a href="#events" class="skip-link">Skip to events</a>
 
-<nav class="navbar navbar-expand navbar-dark sticky-top custom-navbar"> 
-    <a class="navbar-brand" href="index.html">
-        <img src="images/booknest-logo.png" alt="BookNest Logo" width="80" height="64">
+<header>
+<nav class="navbar navbar-expand navbar-dark sticky-top custom-navbar" role="navigation" aria-label="Main navigation"> 
+    <a class="navbar-brand" href="index.html" aria-label="BookNest Home">
+        <img src="images/booknest-logo.png" alt="BookNest - Online Book Club Logo" width="80" height="64">
     </a>
-    <div class="navbar-nav">
+    <div class="navbar-nav" id="navbar-nav">
         <a class="nav-item nav-link" href="index.html">Home</a>
         <a class="nav-item nav-link" href="about.html">About Us</a>
-        <a class="nav-item nav-link active" href="join.html">Join the Nest</a>
+        <a class="nav-item nav-link active" href="join.html" aria-current="page">Join the Nest</a>
     </div>
-    <button class="mobile-nav-toggle d-none" onclick="toggleMobileNav()">☰</button>
+    <button class="mobile-nav-toggle d-none" onclick="toggleMobileNav()" aria-label="Toggle mobile navigation menu" aria-expanded="false" aria-controls="navbar-nav">☰</button>
     <div class="ms-auto d-flex align-items-center"> 
-        <form class="d-flex me-3" role="search">
-            <input class="form-control me-2 custom-search" type="search" placeholder="Search" aria-label="Search">
+        <form class="d-flex me-3" role="search" aria-label="Search books and content">
+            <input class="form-control me-2 custom-search" type="search" placeholder="Search books, authors, genres..." aria-label="Search books, authors, and genres">
             <button class="btn btn-outline-light" type="submit">Search</button>
         </form>
-        <a href="#" class="btn btn-outline-light">Login</a>
+        <a href="#" class="btn btn-outline-light" role="button">Login</a>
     </div>
 </nav>
+</header>
 
 <main id="main-content">
-<section id="why-join" class="join-nest-section">
+<section id="why-join" class="join-nest-section" aria-labelledby="why-join-heading">
     <div class="container mt-5">
-        <h2 class="text-left text-white">Why BookNest?</h2>
+        <h2 id="why-join-heading" class="text-left text-white">Why BookNest?</h2>
         <div class="row mb-4">
         <div class="col-md-12"> 
             <p class="join-nest-text">Joining BookNest connects you with a community of book lovers from around the globe. Share your passion for reading, participate in lively discussions, and gain access to exclusive events.</p>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-3"> 
+    <div class="row" role="region" aria-label="Benefits of joining BookNest">
+        <article class="col-md-3"> 
             <div class="card join-card">
                 <div class="card-body">
-                    <div class="card-icon"><i class="fas fa-comments"></i></div>
+                    <div class="card-icon" aria-hidden="true"><i class="fas fa-comments"></i></div>
                     <h3 class="why-card-title">Lively Discussions</h3>
                 </div>
             </div>
-        </div>
-        <div class="col-md-3">
+        </article>
+        <article class="col-md-3">
             <div class="card join-card">
                 <div class="card-body">
-                    <div class="card-icon"><i class="fas fa-book"></i></div>
+                    <div class="card-icon" aria-hidden="true"><i class="fas fa-book"></i></div>
                     <h3 class="why-card-title">Custom Book Recs</h3>
                 </div>
             </div>
-        </div>
-        <div class="col-md-3">
+        </article>
+        <article class="col-md-3">
             <div class="card join-card">
                 <div class="card-body">
-                    <div class="card-icon"><i class="fas fa-users"></i></div>
-                    <h3 class="why-card-title">Networking & Collabs</h3>
+                    <div class="card-icon" aria-hidden="true"><i class="fas fa-users"></i></div>
+                    <h3 class="why-card-title">Networking & Collaborations</h3>
                 </div>
             </div>
-        </div>
-        <div class="col-md-3">
+        </article>
+        <article class="col-md-3">
             <div class="card join-card">
                 <div class="card-body">
-                    <div class="card-icon"><i class="fas fa-calendar-alt"></i></div>
-                    <h3 class="why-card-title">Events/Book Signings</h3>
+                    <div class="card-icon" aria-hidden="true"><i class="fas fa-calendar-alt"></i></div>
+                    <h3 class="why-card-title">Events & Book Signings</h3>
                 </div>
             </div>
-        </div>
+        </article>
     </div>
     </div>
 </section>
 
-<section id="join-steps" class="join-nest-section">
+<section id="join-steps" class="join-nest-section" aria-labelledby="join-steps-heading">
     <div class="container mt-5">
-        <h2 class="text-center text-white">Join the Nest</h2>
+        <h2 id="join-steps-heading" class="text-center text-white">Join the Nest</h2>
         <p class="join-nest-text text-center">Becoming a member is easy as 1, 2, 3 (literally):</p>
-        <div class="row">
-        <div class="col-md-4">
+        <div class="row" role="list" aria-label="Steps to join BookNest">
+        <div class="col-md-4" role="listitem">
             <div class="card step-card">
                 <div class="card-body">
                     <h3 class="join-card-title">Step 1</h3>
@@ -106,7 +108,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4" role="listitem">
             <div class="card step-card">
                 <div class="card-body">
                     <h3 class="join-card-title">Step 2</h3>
@@ -114,7 +116,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4" role="listitem">
             <div class="card step-card">
                 <div class="card-body">
                     <h3 class="join-card-title">Step 3</h3>
@@ -124,41 +126,45 @@
         </div>
     </div>
         <div class="text-center mt-4">
-            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#joinModal">Create Account</button>
+            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#joinModal" aria-describedby="join-steps-heading">Create Account</button>
         </div>
     </div>
 </section>
 
-    <div class="modal fade" id="joinModal" tabindex="-1" aria-labelledby="joinModalLabel" aria-hidden="true">
+    <div class="modal fade" id="joinModal" tabindex="-1" aria-labelledby="joinModalLabel" aria-hidden="true" role="dialog">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="joinModalLabel">Join BookNest</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h1 class="modal-title" id="joinModalLabel">Join BookNest</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close registration form"></button>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form role="form" aria-labelledby="joinModalLabel">
                         <div class="mb-3">
-                            <label for="name" class="form-label">Full Name</label>
-                            <input type="text" class="form-control" id="name" required>
+                            <label for="name" class="form-label">Full Name <span aria-hidden="true">*</span></label>
+                            <input type="text" class="form-control" id="name" name="name" required aria-required="true" aria-describedby="name-help">
+                            <div id="name-help" class="visually-hidden">Enter your full name for your BookNest profile</div>
                         </div>
                         <div class="mb-3">
-                            <label for="email" class="form-label">Email Address</label>
-                            <input type="email" class="form-control" id="email" required>
+                            <label for="email" class="form-label">Email Address <span aria-hidden="true">*</span></label>
+                            <input type="email" class="form-control" id="email" name="email" required aria-required="true" aria-describedby="email-help">
+                            <div id="email-help" class="visually-hidden">We'll use this email for account confirmation and BookNest updates</div>
                         </div>
                         <div class="mb-3">
-                            <label for="password" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="password" required>
+                            <label for="password" class="form-label">Password <span aria-hidden="true">*</span></label>
+                            <input type="password" class="form-control" id="password" name="password" required aria-required="true" aria-describedby="password-help">
+                            <div id="password-help" class="visually-hidden">Choose a secure password for your account</div>
                         </div>
                         <div class="mb-3">
-                            <label for="confirmPassword" class="form-label">Confirm Password</label>
-                            <input type="password" class="form-control" id="confirmPassword" required>
+                            <label for="confirmPassword" class="form-label">Confirm Password <span aria-hidden="true">*</span></label>
+                            <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" required aria-required="true" aria-describedby="confirm-password-help">
+                            <div id="confirm-password-help" class="visually-hidden">Re-enter your password to confirm</div>
                         </div>
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Submit</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Create Account</button>
                 </div>
             </div>
         </div>
@@ -166,16 +172,16 @@
 </section>
 
 
-<section class="join-nest-section">
+<section class="join-nest-section" aria-labelledby="what-to-expect-heading">
     <div class="container mt-5">
-        <h2 class="text-left text-white">What to Expect</h2>
-        <div class="accordion" id="howItWorksAccordion">
+        <h2 id="what-to-expect-heading" class="text-left text-white">What to Expect</h2>
+        <div class="accordion" id="howItWorksAccordion" role="region" aria-labelledby="what-to-expect-heading">
         <div class="accordion-item">
-            <h2 class="accordion-header">
+            <h3 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#howItWorks1" aria-expanded="false" aria-controls="howItWorks1">
-                    <h3>Participate in Discussions</h3>
+                    Participate in Discussions
                 </button>
-            </h2>
+            </h3>
             <div id="howItWorks1" class="accordion-collapse collapse" data-bs-parent="#howItWorksAccordion">
                 <div class="accordion-body">
                     Engage with fellow readers through discussions on selected books each month. Share your thoughts and gain insights from others!
@@ -183,11 +189,11 @@
             </div>
         </div>
         <div class="accordion-item">
-            <h2 class="accordion-header">
+            <h3 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#howItWorks2" aria-expanded="false" aria-controls="howItWorks2">
-                    <h3>Attend Virtual Events</h3>
+                    Attend Virtual Events
                 </button>
-            </h2>
+            </h3>
             <div id="howItWorks2" class="accordion-collapse collapse" data-bs-parent="#howItWorksAccordion">
                 <div class="accordion-body">
                     Join our monthly events where we invite authors and industry experts for engaging conversations.
@@ -195,11 +201,11 @@
             </div>
         </div>
         <div class="accordion-item">
-            <h2 class="accordion-header">
+            <h3 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#howItWorks3" aria-expanded="false" aria-controls="howItWorks3">
-                    <h3>Explore New Genres</h3>
+                    Explore New Genres
                 </button>
-            </h2>
+            </h3>
             <div id="howItWorks3" class="accordion-collapse collapse" data-bs-parent="#howItWorksAccordion">
                 <div class="accordion-body">
                     Discover new genres and authors through recommendations from other members and our curated lists.
@@ -210,36 +216,45 @@
     </div>
 </section>
 
-<section id="events" class="events-section">
-    <img src="images/join-the-nest-image.jpg" alt="Background image showing a person's laptop displaying a Zoom video conference with multiple participants" class="events-background-img">
+<section id="events" class="events-section" aria-labelledby="events-heading">
+    <figure>
+        <img src="images/join-the-nest-image.jpg" alt="Virtual meeting screenshot showing a laptop screen with a Zoom video conference displaying multiple BookNest community members participating in an online book discussion" class="events-background-img">
+        <figcaption class="visually-hidden">Example of BookNest virtual community events</figcaption>
+    </figure>
     <div class="container mt-5">
-        <h2 class="text-left text-white">Upcoming Events</h2>
-        <ul class="event-list">
+        <h2 id="events-heading" class="text-left text-white">Upcoming Events</h2>
+        <ul class="event-list" role="list" aria-label="Upcoming BookNest events">
         <li>
-            <h3 data-bs-toggle="tooltip" title="Join us for our monthly gathering where we discuss our book of the month and plan future reads.">BookNest Monthly Meeting</h3>
-            <p>Date: November 15, 2024 | Time: 7:00 - 8:00 PM EST</p>
+            <article>
+                <h3 data-bs-toggle="tooltip" title="Join us for our monthly gathering where we discuss our book of the month and plan future reads.">BookNest Monthly Meeting</h3>
+                <p><time datetime="2024-11-15T19:00">Date: November 15, 2024 | Time: 7:00 - 8:00 PM EST</time></p>
+            </article>
         </li>
         <li>
-            <h3 data-bs-toggle="tooltip" title="Get your questions ready for the author of this month's selection!">Author Q&A with Blake Crouch</h3>
-            <p>Date: November 22, 2024 | Time: 6:00 - 7:00 PM EST</p>
+            <article>
+                <h3 data-bs-toggle="tooltip" title="Get your questions ready for the author of this month's selection!">Author Q&A with Blake Crouch</h3>
+                <p><time datetime="2024-11-22T18:00">Date: November 22, 2024 | Time: 6:00 - 7:00 PM EST</time></p>
+            </article>
         </li>
         <li>
-            <h3 data-bs-toggle="tooltip" title="Join the discussion as we delve into the themes and characters of our latest read.">Monthly Book Discussion</h3>
-            <p>Date: December 1, 2024 | Time: 5:00 - 6:30 PM EST</p>
+            <article>
+                <h3 data-bs-toggle="tooltip" title="Join the discussion as we delve into the themes and characters of our latest read.">Monthly Book Discussion</h3>
+                <p><time datetime="2024-12-01T17:00">Date: December 1, 2024 | Time: 5:00 - 6:30 PM EST</time></p>
+            </article>
         </li>
     </ul>
     </div>
 </section>
 </main>
 
-<footer class="footer">
+<footer class="footer" role="contentinfo" aria-label="Site footer">
     <div class="container-fluid text-center">
-        <div class="footer-links">
+        <nav class="footer-links" aria-label="Footer navigation">
             <a href="about.html" class="footer-link">About Us</a>
             <a href="#" class="footer-link">Contact</a>
             <a href="#" class="footer-link">Privacy Policy</a>
             <a href="#" class="footer-link">Terms of Service</a>
-        </div>
+        </nav>
         <p class="mt-3">&copy; 2025 BookNest. All Rights Reserved.</p>
     </div>
 </footer>

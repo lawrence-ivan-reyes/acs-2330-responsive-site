@@ -7,7 +7,7 @@
     --card-bg: rgba(255, 255, 255, 0.1);
     --card-bg-dark: rgba(0, 0, 0, 0.5);
     --text-light: #ffffff;
-    --text-muted: #ccc;
+    --text-muted: #e0e0e0;
     --text-dark: #1d1d1d;
     --border-light: rgba(255, 255, 255, 0.3);
     --border-muted: rgba(255, 255, 255, 0.2);
@@ -95,8 +95,13 @@
 
 button:focus-visible, 
 a:focus-visible,
-.btn:focus-visible {
-    box-shadow: 0 0 0 4px rgba(255, 215, 0, 0.3);
+.btn:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.8);
+    outline: 2px solid var(--primary-gold);
+    outline-offset: 2px;
 }
 
 /* base classes */
@@ -148,6 +153,18 @@ a:focus-visible,
     box-shadow: var(--card-shadow);
     backdrop-filter: blur(10px);
     margin-bottom: 40px;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
 }
 
 .card-glass {
@@ -249,7 +266,7 @@ body, p, span, div, .card-text, .lead {
 }
 
 .custom-search::placeholder {
-    color: rgba(193, 193, 193, 0.798);
+    color: rgba(220, 220, 220, 0.9);
 }
 
 .custom-navbar .nav-link.active {
@@ -420,6 +437,21 @@ footer {
 .carousel-control-prev,
 .carousel-control-next {
     pointer-events: auto;
+}
+
+.carousel-control-prev:focus,
+.carousel-control-next:focus {
+    outline: 2px solid var(--primary-gold);
+    outline-offset: 2px;
+}
+
+[role="button"]:not(button):not(input):not(textarea) {
+    cursor: pointer;
+}
+
+[role="button"]:not(button):not(input):not(textarea):focus {
+    outline: 2px solid var(--primary-gold);
+    outline-offset: 2px;
 }
 
 .genres-top-picks .carousel-item img {

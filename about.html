@@ -25,32 +25,37 @@
 <a href="#our-story" class="skip-link">Skip to our story</a>
 <a href="#values" class="skip-link">Skip to values</a>
 
-<nav class="navbar navbar-expand navbar-dark sticky-top custom-navbar"> 
-    <a class="navbar-brand" href="index.html">
-        <img src="images/booknest-logo.png" alt="BookNest Logo" width="80" height="64">
+<header>
+<nav class="navbar navbar-expand navbar-dark sticky-top custom-navbar" role="navigation" aria-label="Main navigation"> 
+    <a class="navbar-brand" href="index.html" aria-label="BookNest Home">
+        <img src="images/booknest-logo.png" alt="BookNest - Online Book Club Logo" width="80" height="64">
     </a>
-    <div class="navbar-nav">
+    <div class="navbar-nav" id="navbar-nav">
         <a class="nav-item nav-link" href="index.html">Home</a>
-        <a class="nav-item nav-link active" href="about.html">About Us</a>
+        <a class="nav-item nav-link active" href="about.html" aria-current="page">About Us</a>
         <a class="nav-item nav-link" href="join.html">Join the Nest</a>
     </div>
-    <button class="mobile-nav-toggle d-none" onclick="toggleMobileNav()">☰</button>
+    <button class="mobile-nav-toggle d-none" onclick="toggleMobileNav()" aria-label="Toggle mobile navigation menu" aria-expanded="false" aria-controls="navbar-nav">☰</button>
     <div class="ms-auto d-flex align-items-center"> 
-        <form class="d-flex me-3" role="search">
-            <input class="form-control me-2 custom-search" type="search" placeholder="Search" aria-label="Search">
+        <form class="d-flex me-3" role="search" aria-label="Search books and content">
+            <input class="form-control me-2 custom-search" type="search" placeholder="Search books, authors, genres..." aria-label="Search books, authors, and genres">
             <button class="btn btn-outline-light" type="submit">Search</button>
         </form>
-        <a href="#" class="btn btn-outline-light">Login</a>
+        <a href="#" class="btn btn-outline-light" role="button">Login</a>
     </div>
 </nav>
+</header>
 
 <main id="main-content">
-<section id="our-story" class="our-story-section">
+<section id="our-story" class="our-story-section" aria-labelledby="our-story-heading">
     <div class="container my-5">
-        <h2>Our Story</h2>
-        <div class="row align-items-center">
+        <h2 id="our-story-heading">Our Story</h2>
+        <article class="row align-items-center">
             <div class="col-md-6">
-                <img src="images/booknest-logo.png" alt="BookNest Logo" class="img-fluid logo-img" />
+                <figure>
+                    <img src="images/booknest-logo.png" alt="BookNest logo featuring a stylized nest with books nestled inside, representing our community of readers" class="img-fluid logo-img" />
+                    <figcaption class="visually-hidden">Official BookNest community logo</figcaption>
+                </figure>
             </div>
             <div class="col-md-6">
                 <div class="card our-story-card"> 
@@ -68,59 +73,71 @@
                     </p>
                 </div>
             </div>
-        </div>
+        </article>
     </div>
 </section>
 
-<section id="values" class="mission-section">
+<section id="values" class="mission-section" aria-labelledby="values-heading">
     <div class="container my-5">
-        <h2 class="mission-header">The Foundations of Our Nest</h2>
-        <div class="row text-center">
-            <div class="col-md-3">
+        <h2 id="values-heading" class="mission-header">The Foundations of Our Nest</h2>
+        <div class="row text-center" role="region" aria-label="Our core values">
+            <article class="col-md-3">
                 <div class="value-card">
-                    <img src="images/inclusivity-icon.png" alt="Icon representing inclusivity: three people surrounded by a circular arrow" class="value-icon">
+                    <figure>
+                        <img src="images/inclusivity-icon.png" alt="Inclusivity icon showing three diverse figures embraced by a circular arrow symbolizing unity and welcome" class="value-icon">
+                        <figcaption class="visually-hidden">Inclusivity value icon</figcaption>
+                    </figure>
                     <h3>Inclusivity</h3>
                     <p>Welcoming all readers, regardless of their literary preferences.</p>
                 </div>
-            </div>
-            <div class="col-md-3">
+            </article>
+            <article class="col-md-3">
                 <div class="value-card">
-                    <img src="images/diversity-icon.png" alt="Icon representing diversity: a globe surrounded by six people" class="value-icon">
+                    <figure>
+                        <img src="images/diversity-icon.png" alt="Diversity icon depicting a globe surrounded by six people of different backgrounds" class="value-icon">
+                        <figcaption class="visually-hidden">Diversity value icon</figcaption>
+                    </figure>
                     <h3>Diversity</h3>
                     <p>Celebrating a wide range of voices and perspectives in literature.</p>
                 </div>
-            </div>
-            <div class="col-md-3">
+            </article>
+            <article class="col-md-3">
                 <div class="value-card">
-                    <img src="images/connection-icon.png" alt="Icon representing connection: a person linked to three other people via lines" class="value-icon">
+                    <figure>
+                        <img src="images/connection-icon.png" alt="Connection icon showing a central person connected to three others through branching lines" class="value-icon">
+                        <figcaption class="visually-hidden">Connection value icon</figcaption>
+                    </figure>
                     <h3>Connection</h3>
                     <p>Building true connections through shared reading experiences.</p>
                 </div>
-            </div>
-            <div class="col-md-3">
+            </article>
+            <article class="col-md-3">
                 <div class="value-card">
-                    <img src="images/passion-icon.png" alt="Icon representing passion: a head with a heart inside and a checkmark in a thought bubble" class="value-icon">
+                    <figure>
+                        <img src="images/passion-icon.png" alt="Passion icon featuring a profile of a head with a heart inside and an approved checkmark in a thought bubble" class="value-icon">
+                        <figcaption class="visually-hidden">Passion value icon</figcaption>
+                    </figure>
                     <h3>Passion</h3>
                     <p>Fostering a universal love of reading that inspires and enriches us.</p>
                 </div>
-            </div>
+            </article>
         </div>
     </div>
 </section>
 
-<section class="timeline-section">
-    <h2 class="timeline-title">How We Got Here</h2>
-    <div class="timeline">
+<section class="timeline-section" aria-labelledby="timeline-heading">
+    <h2 id="timeline-heading" class="timeline-title">How We Got Here</h2>
+    <div class="timeline" role="region" aria-label="BookNest history timeline">
 
         <div class="timeline-item">
             <div class="timeline-year">2021</div>
             <div class="accordion" id="timelineAccordion2021">
                 <div class="accordion-item">
-                    <h2 class="accordion-header" id="heading2021">
+                    <h3 class="accordion-header" id="heading2021">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2021" aria-expanded="false" aria-controls="collapse2021">
                             Our Humble Beginnings
                         </button>
-                    </h2>
+                    </h3>
                     <div id="collapse2021" class="accordion-collapse collapse" aria-labelledby="heading2021" data-bs-parent="#timelineAccordion2021">
                         <div class="accordion-body">
                             We started with a small group of passionate readers who dreamed of connecting book lovers everywhere.
@@ -134,11 +151,11 @@
             <div class="timeline-year">2022</div>
             <div class="accordion" id="timelineAccordion2022">
                 <div class="accordion-item">
-                    <h2 class="accordion-header" id="heading2022">
+                    <h3 class="accordion-header" id="heading2022">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2022" aria-expanded="false" aria-controls="collapse2022">
                             Community Growth
                         </button>
-                    </h2>
+                    </h3>
                     <div id="collapse2022" class="accordion-collapse collapse" aria-labelledby="heading2022" data-bs-parent="#timelineAccordion2022">
                         <div class="accordion-body">
                             Growth to a vibrant online community, welcoming readers from around the globe.
@@ -152,11 +169,11 @@
             <div class="timeline-year">2023</div>
             <div class="accordion" id="timelineAccordion2023">
                 <div class="accordion-item">
-                    <h2 class="accordion-header" id="heading2023">
+                    <h3 class="accordion-header" id="heading2023">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2023" aria-expanded="false" aria-controls="collapse2023">
                             Expanded Features
                         </button>
-                    </h2>
+                    </h3>
                     <div id="collapse2023" class="accordion-collapse collapse" aria-labelledby="heading2023" data-bs-parent="#timelineAccordion2023">
                         <div class="accordion-body">
                             Expanded our features, introducing new genres and book recommendations.
@@ -170,11 +187,11 @@
             <div class="timeline-year">2024</div>
             <div class="accordion" id="timelineAccordion2024">
                 <div class="accordion-item">
-                    <h2 class="accordion-header" id="heading2024">
+                    <h3 class="accordion-header" id="heading2024">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2024" aria-expanded="false" aria-controls="collapse2024">
                             Global Launch
                         </button>
-                    </h2>
+                    </h3>
                     <div id="collapse2024" class="accordion-collapse collapse" aria-labelledby="heading2024" data-bs-parent="#timelineAccordion2024">
                         <div class="accordion-body">
                             Launched BookNest officially as a global network for book lovers all over the world.
@@ -187,14 +204,14 @@
 </section>
 </main>
 
-<footer class="footer">
+<footer class="footer" role="contentinfo" aria-label="Site footer">
     <div class="container text-center">
-        <div class="footer-links">
+        <nav class="footer-links" aria-label="Footer navigation">
             <a href="about.html" class="footer-link">About Us</a>
             <a href="#" class="footer-link">Contact</a>
             <a href="#" class="footer-link">Privacy Policy</a>
             <a href="#" class="footer-link">Terms of Service</a>
-        </div>
+        </nav>
         <p class="mt-3">&copy; 2025 BookNest. All Rights Reserved.</p>
     </div>
 </footer>
